@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>164845 - Contact - Abdullah Ali Ahmad Al-Talafha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <span> | </span>
+    <a href="contact.html">Contact Me</a>
+  </div>
+
+  <div class="container">
+
+    <h1>Contact Me</h1>
+    <p>Please fill in all the fields below and press Submit.</p>
+
+    <div class="contact-box">
+
+      <p><span class="label">Full Name:</span></p>
+      <input type="text" id="fullName">
+      <div class="error" id="err-fullName"></div>
+
+      <p><span class="label">Email Address:</span></p>
+      <input type="text" id="email">
+      <div class="error" id="err-email"></div>
+
+      <p><span class="label">Country:</span></p>
+      <input type="text" id="country">
+      <div class="error" id="err-country"></div>
+
+      <p><span class="label">Comments:</span></p>
+      <input type="text" id="comments">
+      <div class="error" id="err-comments"></div>
+
+      <button onclick="checkForm()">Submit</button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

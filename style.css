@@ -1,0 +1,175 @@
+/* ============================================
+   Basic stuff (from class): color, background,
+   font, width/height, borders
+   ============================================ */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef2f7;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #1a4d8f;
+  padding: 12px;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav span {
+  color: #ffffff;
+}
+
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #cccccc;
+
+  /* found this online - box-shadow gives the box a bit of
+     depth instead of it looking flat on the page */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+
+  /* rounds the corners of the box a little */
+  border-radius: 8px;
+}
+
+h1 {
+  color: #1a4d8f;
+
+  /* text-shadow - adds a tiny shadow behind the text,
+     found it while looking up how to make headings pop a bit */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #1a4d8f;
+  border-bottom: 2px solid #cccccc;
+  padding-bottom: 5px;
+
+  /* letter-spacing - adds a little space between letters */
+  letter-spacing: 0.5px;
+}
+
+.photo img {
+  width: 200px;
+  height: auto;
+  border: 3px solid #1a4d8f;
+  border-radius: 8px;
+  margin-bottom: 10px;
+
+  /* transition + the hover rule below it makes the photo
+     smoothly grow a tiny bit when you hover over it */
+  transition: transform 0.3s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.03);
+}
+
+.skills {
+  margin-bottom: 10px;
+}
+
+.skill {
+  display: inline-block;
+  background-color: #e0eaf5;
+  border: 1px solid #1a4d8f;
+  padding: 5px 10px;
+  margin: 4px;
+  border-radius: 20px; /* makes it look like a rounded "pill" */
+
+  transition: background-color 0.2s ease;
+}
+
+.skill:hover {
+  background-color: #1a4d8f;
+  color: #ffffff;
+}
+
+.tools-table {
+  border: 1px solid #cccccc;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  overflow: hidden; /* keeps the header's square corners from poking out */
+}
+
+.tools-row {
+  border-bottom: 1px solid #cccccc;
+  padding: 8px;
+}
+
+.tools-row:last-child {
+  border-bottom: none;
+}
+
+/* nth-child - another thing I found while reading about CSS,
+   it lets you style every other row without adding a class to each one */
+.tools-row:nth-child(even) {
+  background-color: #f7f9fc;
+}
+
+.tools-header {
+  /* linear-gradient - a smooth color blend instead of one flat color */
+  background: linear-gradient(to right, #1a4d8f, #2f6fc4);
+  color: #ffffff;
+}
+
+.cell {
+  display: inline-block;
+  width: 30%;
+}
+
+.contact-box input {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+
+  transition: border-color 0.2s ease;
+}
+
+/* :focus - changes the border color while you're typing in the box */
+.contact-box input:focus {
+  border-color: #1a4d8f;
+  outline: none;
+}
+
+.contact-box .label {
+  font-weight: bold;
+}
+
+.error {
+  color: #cc0000;
+  font-size: 13px;
+  margin-bottom: 10px;
+  min-height: 15px;
+}
+
+button {
+  background-color: #1a4d8f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #143d70;
+}
